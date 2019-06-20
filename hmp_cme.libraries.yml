@@ -1,0 +1,12 @@
+global:
+  version: 1.00
+  css:
+    base:
+      css/bootstrap.min.css: {}
+      css/header.css: {}
+      css/style.css: {}
+  js:
+    js/bootstrap.min.js: {}
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery

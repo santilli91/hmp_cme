@@ -1,0 +1,13 @@
+name: HMP CME
+description: 'Base Theme'
+version: 1.00
+type: theme
+package: HMP
+core: 8.x
+
+libraries:
+ - hmp_cme/global
+
+regions:
+ content: Content
+ aside: Sidebar
