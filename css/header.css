@@ -1,14 +1,49 @@
+#header-wrapper {
+	background: #fff;
+	border-bottom: 10px solid #1C2F72;
+	margin-bottom: 20px;
+}
 #logo img{
 	width: 100%;
 	height: auto;
 }
+#sidebar #block-hmp-cme-hmpcmecourseprogress {display: none;}
+
+
+#course-nav-mobile h2 {
+
+}
+#course-nav-mobile ul {display: none;}
+ul#course-progress {
+	margin: 0;
+	padding: 12px;
+	width: 100%;
+}
+ul#course-progress li {
+	list-style: none;
+	width: 100%;
+	background: #afafaf;
+	margin-bottom: 5px;
+	border: solid 2px #000;
+	border-bottom-right-radius: 12px;
+	border-top-left-radius: 12px;
+}
+ul#course-progress li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 12px 8px;
+}
+ul#course-progress li a:hover {text-decoration: none;}
 
 @media(min-width: 768px) {
 
 }
 
 @media(min-width: 998px) {
-
+	#course-nav-mobile {display: none;}
+	#sidebar #block-hmp-cme-hmpcmecourseprogress {display: block;}
 }
 
 @media(min-width: 1136px) {
