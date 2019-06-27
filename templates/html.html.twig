@@ -30,6 +30,20 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
+    <style>
+      .pColor{
+        background: {{primary_color}};
+      }
+      .sColor {
+        background: {{secondary_color}};
+      }
+      .fColor {
+        color: {{link_color}};
+      }
+      #header a {
+        color: {{secondary_color}};
+      }
+    </style>
   </head>
   <body{{ attributes }}>
     {#

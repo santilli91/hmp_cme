@@ -6,3 +6,20 @@ background: green;
 color: #fff;
 background: red;
 }
+
+table {
+	box-shadow: 1px 2px 0px #EEEEEE;
+}
+table thead tr {
+	background: #dedfe0;
+}
+table tr:nth-child(2n + 2) {
+	background: #f0f5ff;
+}
+table td,table th {
+	border: 1px solid #EEEEEE;
+	padding: 10px 6px;
+}
+table input {
+	padding: 4px;
+}
