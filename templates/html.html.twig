@@ -30,6 +30,7 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
+    <link rel="stylesheet" href="https://use.typekit.net/tux3evh.css">
     <style>
       .pColor{
         background: {{primary_color}};
@@ -41,7 +42,7 @@
         color: {{link_color}};
       }
       #header a {
-        color: {{secondary_color}};
+        color: {{link_color}};
       }
     </style>
   </head>

@@ -5,6 +5,8 @@ global:
       css/bootstrap.min.css: {}
       css/header.css: {}
       css/style.css: {}
+      css/coursepage.css: {}
+      css/footer.css: {}
   js:
     js/bootstrap.min.js: {}
     js/scripts.js: {}
