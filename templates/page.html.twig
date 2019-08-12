@@ -1,5 +1,16 @@
+{% if cme_header %}
+	<div id="cme-header-wrapper">
+		<div class="container">
+			<div id="cme-header" class="col-sm-12">
+				<a href="/">
+					<img src="https://s3.amazonaws.com/naccme/naccme/hmp_cme_only%402x.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+{% endif %}
 <div id="header-wrapper" class="pColor">
-	<section id="header" class="container">
+	<section id="header" class="container {% if cme_header %}with-header{%endif%}">
 		<div id="header-left" class="col-sm-8">
 			    <div id="logo"><a href="{{homepath}}">
 			    	<img src="{{brand_logo}}"/>

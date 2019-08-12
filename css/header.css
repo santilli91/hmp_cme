@@ -11,9 +11,12 @@
 }
 
 #header {
-	height: 100%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	height: 102px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#header.with-header{
+	height: 75px;
 }
 
 #header-border {
@@ -60,6 +63,28 @@
 #logo img{
 	max-width: 100%;
 	max-height: 100%;
+}
+
+#cme-header-wrapper {
+	width: 100%;
+	background: #fff;
+	border-bottom: 2px solid #afafaf;
+}
+
+#cme-header {
+	height: 25px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#cme-header a {
+	display: block;
+	height: 100%;
+}
+#cme-header a img {
+	height: 100%;
+	width: auto;
+	vertical-align: top;
 }
 
 /*header responsive styles*/
