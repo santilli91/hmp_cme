@@ -12,8 +12,12 @@
 
 #header {
 	height: 100%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#header-border {
+	margin-bottom: 0;
 }
 
 #header-left, #header-right {
@@ -24,15 +28,28 @@
 	text-align: right;
 }
 
+#header-right ul {
+	margin: 0;
+	padding: 0;
+}
+
+#header-right li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
 #header-right a {
 	padding: 0 6px 0 3px;
 	border-right: 1px solid #1F77AE;
 	font-family: "acumin-pro-condensed";
 	font-weight: 600;
 	font-size: 16px;
+	text-transform: capitalize;
 }
 
-#header-right #link-register {
+#header-right li:last-child a {
 	border-right: none;
 }
 
@@ -43,4 +60,9 @@
 #logo img{
 	max-width: 100%;
 	max-height: 100%;
+}
+
+/*header responsive styles*/
+@media(min-width: 768px) {
+	
 }

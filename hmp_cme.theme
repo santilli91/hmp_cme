@@ -1,19 +1,8 @@
 <?
 
-use \Drupal\node\Entity\Node;
-use \Drupal\taxonomy\Entity\Term;
-
-$GLOBALS['hmpcme']['brand_id'] = 4;
-$GLOBALS['hmpcme']['course'] = hmpcme_getCurrentCourse();
-$GLOBALS['hmpcme']['brand'];
+$GLOBALS['hmpcme'] = hmpcme_getBrandCourse();
 
 function hmp_cme_preprocess_html(&$var) {
-	$bid = $GLOBALS['hmpcme']['brand_id'];
-	if($GLOBALS['hmpcme']['course']) {
-		$course = Node::load($GLOBALS['hmpcme']['course']);
-		$bid = $course->field_brand[0]->target_id;
-	}
-	$GLOBALS['hmpcme']['brand'] = Term::load($bid);  
 	$brand = $GLOBALS['hmpcme']['brand'];
 	$var['primary_color'] = $brand->field_primary_color->value;
 	$var['secondary_color'] = $brand->field_secondary_color->value;
@@ -25,4 +14,5 @@ function hmp_cme_preprocess_page(&$var) {
 	$file = \Drupal\file\Entity\File::load($brand->field_brand_logo[0]->target_id);
 	$var['brand_logo'] = file_create_url($file->getFileUri());
 	$var['primary_color'] = $brand->field_primary_color->value;
+	$var['homepath'] = $brand->id() == 4?"/":"/".$brand->field_short_name->value;
 }
