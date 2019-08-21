@@ -12,10 +12,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: 2em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -24,10 +26,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: 1.5em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -36,10 +40,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: 1.17em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -48,10 +54,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: 1em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -60,10 +68,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: .83em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -72,10 +82,12 @@
 	letter-spacing: .5px;
 	display: block;
 	font-size: .67em;
+	/*
 	margin-block-start: 0.67em;
 	margin-block-end: 0.67em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	*/
 	font-weight: bold;
 }
 
@@ -84,9 +96,12 @@
 	color: #1C2F72;
 }
 
-.container .front-page-image {
+#block-heroimage {
+
+}
+
+#block-heroimage .front-page-image {
 	max-width: 100%;
-    padding: 0 15px;
 }
 
 #block-hmp-cme-content,
@@ -164,7 +179,6 @@ select {
     width: 100%;
     padding: 15px;
     background: #F0F1F4;
-    margin-top: -8px;
 }
 
 .field-name-field-frontmatter-title {
