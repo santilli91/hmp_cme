@@ -11,5 +11,6 @@ global:
   js:
     js/bootstrap.min.js: {}
     js/scripts.js: {}
+    js/sidebar.js: {}
   dependencies:
     - core/jquery

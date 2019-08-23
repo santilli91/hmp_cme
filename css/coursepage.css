@@ -1,8 +1,97 @@
 /*quiz page styles*/
 .hmpcme-quiz-form .js-form-item {
 	margin: 0 0 15px 0;
+	font-size: 14px;
+	cursor: pointer;
 }
 
-.hmpcme-quiz-form input[type="radio"] {
-	margin: 0 15px 0 0;
+.hmpcme-quiz-form label{
+	margin-left: 8px;
+}
+
+.hmpcme-quiz-form .type-likert label{
+	float: left;
+	line-height: 10px;
+	margin: 6px 6px 0;
+}
+
+.hmpcme-quiz-form input {
+	vertical-align: top;
+	margin: 6px 6px 0;
+	float: left;
+}
+
+.hmpcme-quiz-form .type-likert input {
+	float: none;
+}
+
+.hmpcme-quiz-form .type-multiple_choice:after {
+	clear: both;
+	content: ' ';
+	height: 1px;
+}
+
+@media(min-width: 768px) {
+	.hmpcme-quiz-form .type-multiple_choice .fieldset-wrapper > div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.hmpcme-quiz-form .type-multiple_choice .js-form-item {
+		flex: 0 50%;
+	}
+}
+
+
+/* Quiz Admin Styles */
+#block-hmpcmecoursemanagemenu ul {
+	margin: 15px 5px;
+	padding: 0;
+	border-top: 1px dashed #afafaf;
+	border-bottom: 1px dashed #afafaf;
+}
+
+#block-hmpcmecoursemanagemenu ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 6px;
+}
+
+#block-hmpcmecoursemanagemenu ul li a,
+#block-hmp-cme-content a.button {
+	display: block;
+	padding: 4px 8px;
+	border: 2px solid #afafaf;
+	background: #EEEEEE;
+	color: navy;
+	font-size: 12px;
+}
+#block-hmp-cme-content a.button {
+	margin: 6px;
+	display: inline-block;
+}
+#block-hmpcmecoursemanagemenu ul li a:hover,
+#block-hmp-cme-content a.button:hover {
+	background: navy;
+	color: #EEEEEE;
+	text-decoration: none;
+}
+#block-hmp-cme-content .tabledrag-toggle-weight-wrapper {
+	display: none;
+}
+
+.hmpcme-course-manage-certificate table input {
+	padding: 4px;
+	width: 100%;
+}
+
+a.tabledrag-handle .handle {
+	width: 24px;
+	height: 24px;
+}
+
+#hmpcme-add-to-cart-form {
+	padding: 12px;
+	margin: 15px 0;
+	border: 2px solid #ed5;
+	background: #fffce5;
 }

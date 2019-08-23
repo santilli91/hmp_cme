@@ -1,6 +1,7 @@
 /*sidebar styles*/
 #sidebar {
 	margin: 0 0 15px 0;
+  max-width: 360px;
 }
 
 /*course nav styles*/
