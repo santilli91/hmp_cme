@@ -11,9 +11,11 @@ function hmp_cme_preprocess_html(&$var) {
 
 function hmp_cme_preprocess_page(&$var) {
 	$brand = $GLOBALS['hmpcme']['brand'];
-	$file = \Drupal\file\Entity\File::load($brand->field_brand_logo[0]->target_id);
-	$var['brand_logo'] = file_create_url($file->getFileUri());
-	$var['primary_color'] = $brand->field_primary_color->value;
-	$var['homepath'] = $brand->id() == 4?"/":"/".$brand->field_short_name->value;
-	$var['cme_header'] = $brand->id() == 4?FALSE:TRUE;
+	if($brand) {
+		$file = \Drupal\file\Entity\File::load($brand->field_brand_logo[0]->target_id);
+		$var['brand_logo'] = file_create_url($file->getFileUri());
+		$var['primary_color'] = $brand->field_primary_color->value;
+		$var['homepath'] = $brand->id() == 4?"/":"/".$brand->field_short_name->value;
+		$var['cme_header'] = $brand->id() == 4?FALSE:TRUE;
+	}
 }

@@ -1,7 +1,12 @@
 jQuery(function($) {
+		
+	$(window).on('load', function() {handleResponsive()});
+	$(window).on('resize', function() {handleResponsive()});
+
 	$(window).on('load', function() {handleScroll()});
 	$(window).on('scroll',function() {handleScroll()});
 	$(window).on('resize',function() {handleScroll()});
+
 
 	function handleScroll() {
 
@@ -27,5 +32,19 @@ jQuery(function($) {
 		else {
 			$('#sidebar').css({'position':'relative','top':'','right':'','left':''});
 		}	
+	}
+
+	function handleResponsive() {
+		if(window.innerWidth < 768) {
+			if(!$('#course-nav-mobile #block-hmp-cme-hmpcmecourseprogress').length) {
+				var element = $('#block-hmp-cme-hmpcmecourseprogress').detach();
+				$('#course-nav-mobile').append(element);
+			}
+		}else {
+			if(!$('#sidebar #block-hmp-cme-hmpcmecourseprogress').length) {
+				var element = $('#block-hmp-cme-hmpcmecourseprogress').detach();
+				$('#sidebar').append(element);
+			}
+		}
 	}
 });
