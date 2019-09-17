@@ -1,0 +1,42 @@
+.path-user article >div div:nth-child(1){
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.user-status-block {
+	border: 2px solid #afafaf;
+	border-radius: 6px;
+}
+
+.user-status-block {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.user-status-block h2{
+	margin: 8px;
+}
+
+.user-status-block ul {
+	margin: 0;
+	padding: 0;
+}
+
+.user-status-block ul li {
+	border-bottom: 2px solid #EEEEEE;
+	padding: 0 0 6px 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	list-style: none;
+	font-weight: bold;
+}
+
+.user-status-block ul li:last-child {
+	border-bottom: none;
+}
+
+.user-status-block ul li a {
+	font-size: 16px;
+	font-weight: normal;
+}
+

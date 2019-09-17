@@ -8,6 +8,7 @@ global:
       css/coursepage.css: {}
       css/footer.css: {}
       css/sidebar.css: {}
+      css/user.css: {}
   js:
     js/bootstrap.min.js: {}
     js/scripts.js: {}
