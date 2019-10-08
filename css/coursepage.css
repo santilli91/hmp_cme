@@ -95,3 +95,9 @@ a.tabledrag-handle .handle {
 	border: 2px solid #ed5;
 	background: #fffce5;
 }
+
+#edit-course-steps {
+	table-layout: unset;
+	min-width: 850px;
+	overflow-x: scroll;
+}

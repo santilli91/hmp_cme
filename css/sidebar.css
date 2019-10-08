@@ -1,3 +1,10 @@
+.manage-certificates #sidebar {
+  display: none;
+}
+
+.manage-certificates #page-content {
+  width: 100%;
+}
 /*sidebar styles*/
 #sidebar {
 	margin: 0 0 15px 0;

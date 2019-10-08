@@ -3,10 +3,27 @@
 $GLOBALS['hmpcme'] = hmpcme_getBrandCourse();
 
 function hmp_cme_preprocess_html(&$var) {
+	$classes = array(' ');
 	$brand = $GLOBALS['hmpcme']['brand'];
 	$var['primary_color'] = $brand->field_primary_color->value;
 	$var['secondary_color'] = $brand->field_secondary_color->value;
 	$var['link_color'] = $brand->field_link_color->value;
+
+	$uri = $_SERVER['REQUEST_URI'];
+	$args = explode('/',explode('?',$uri)[0]);
+	if($args[1] == 'program') {
+		$classes[] = 'program';
+		if($args[3] == 'manage') {
+			$classes[] = 'program-management';
+			if(isset($args[4]))
+				$classes[] = 'manage-' . $args[4];
+		}
+		if($args[3] == 'reports')
+			$classes[] = 'manage-reports';
+	}
+
+	$var['hmpcme_classes'] = implode(' ',$classes);
+
 }
 
 function hmp_cme_preprocess_page(&$var) {
