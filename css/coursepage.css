@@ -101,3 +101,16 @@ a.tabledrag-handle .handle {
 	min-width: 850px;
 	overflow-x: scroll;
 }
+
+#attempt-submission > li,
+#hmpcme-quiz-form  fieldset {
+	list-style: decimal;
+    margin: 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 10px 0;
+}
+
+#attempt-submission >li ul >li,
+#hmpcme-quiz-form >li ul >li {
+	list-style: upper-alpha;
+}

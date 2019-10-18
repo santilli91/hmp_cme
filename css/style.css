@@ -312,12 +312,39 @@ label {
 
 
 
-.correct {
-	background: green;
+.correct span {
+	background-color: rgba(19, 143, 19, 0.62);
+	border: 2px solid rgba(19, 143, 19, 1);
 	color: #fff;
+	padding: 3px 20px;
 }
 
-.incorrect {
-	background: red;
+.incorrect span{
+	background-color: rgba(143, 19, 19, 0.62);
 	color: #fff;
+	padding: 3px 20px;
+	border: 2px solid rgba(143, 19, 19, 0.62);
+}
+
+
+
+/**************
+ON-DEMAND
+*****************/
+#block-views-block-commerce-bundle-pages-on-demands-block-1 .views-row {
+	padding: 15px 8px;
+	border: 1px solid #afafaf;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	background: #EEEEEE;
+	display: grid;
+	grid-column-gap: 12px;
+	width: 48%;
+	float: left;
+	margin: 1%;
+	min-height: 85px;
+}
+
+#block-views-block-commerce-bundle-pages-on-demands-block-1 .views-row .views-field {
+	grid-area: 1;
 }
