@@ -13,5 +13,6 @@ global:
     js/bootstrap.min.js: {}
     js/scripts.js: {}
     js/sidebar.js: {}
+    js/user_manage.js: {}
   dependencies:
     - core/jquery
