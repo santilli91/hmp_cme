@@ -114,3 +114,57 @@ a.tabledrag-handle .handle {
 #hmpcme-quiz-form >li ul >li {
 	list-style: upper-alpha;
 }
+
+
+#course-progress-bar {
+		width: 55%;
+		border-radius: 5px;
+		background: #EEEEEE;
+		height: 32px;
+		padding: 0;
+		margin: 25px auto;
+}
+#course-progress-bar a{
+		text-decoration: 	none;
+		transition: linear 0.25s;
+}
+
+#course-progress-bar-current a{
+		display: block;
+		float: left;
+		width: 75%;
+		background: #afafaf;
+		color: #fff;
+		height: 32px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+}
+#course-progress-bar-current a:hover {
+	background: #EEEEEE;
+	color: blue;
+}
+
+#course-progress-bar-next a{
+	display: block;
+		float: left;
+		width: 25%;
+		background: green;
+		color: #fff;
+		height: 32px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+}
+#course-progress-bar-next a:hover {
+	background: #EEEEEE;
+	color: green;
+}
