@@ -35,4 +35,8 @@ function hmp_cme_preprocess_page(&$var) {
 		$var['homepath'] = $brand->id() == 4?"/":"/".$brand->field_short_name->value;
 		$var['cme_header'] = $brand->id() == 4?FALSE:TRUE;
 	}
+	$var['sidebar_on'] = false;
+	if(hmpcme_getCurrentCourse()) {
+		$var['sidebar_on'] = true;
+	}
 }
